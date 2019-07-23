@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/new_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:orientation="vertical"
+        android:id="@+id/webViewlayout"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <FrameLayout
+                android:id="@+id/frmQueue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <com.talentcerebrumhrms.utils.EulaWebView
+                    android:id="@+id/webView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/bgweb"
+                    android:padding="40dp"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+                <RelativeLayout
+                    android:id="@+id/splash"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+
+                    android:layout_gravity="center">
+
+
+                    <ProgressBar
+                        android:id="@+id/progressBarSplash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:indeterminate="false" />
+                </RelativeLayout>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/bottom_web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

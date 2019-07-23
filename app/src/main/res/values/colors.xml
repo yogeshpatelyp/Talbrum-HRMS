@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#253949</color>
+    <color name="colorPrimaryDark">#253949</color>
+    <color name="colorPrimaryTint">#80253949</color>
+    <color name="colorAccent">#179b81</color>
+    <color name="opaque_red">#f00</color>
+    <color name="translucent_red">#80ff0000</color>
+    <color name="color_white">#ffffff</color>
+    <color name="white">#fafafa</color>
+    <color name="black">#000000</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="light_green">#009987</color>
+    <color name="background_grey">#edebec</color>
+    <color name="drawer_header">#ffffff</color>
+    <color name="drawer_below">#ffffff</color>
+    <color name="divider_color">#d5d5d5</color>
+    <color name="dialog_color">#f3f2f2</color>
+    <color name="pending_color">#ff1a1a</color>
+    <color name="color_green">#2d9b30</color>
+    <color name="outdoor_color">#f34d4d</color>
+    <color name="blue">#2b5aa5</color>
+    <color name="grey">#afafaf</color>
+    <color name="primardark2">#1a1a19</color>
+    <color name="dark_green">#1f612f</color>
+    <color name="chat_receive">#42448c4a</color>
+    <color name="chat_background">#e6e6e6</color>
+    <color name="default_chat_color">#78c4c4c4</color>
+    <color name="holiday_select_color">#eeeeee</color>
+    <color name="preference_fallback_accent_color">@color/colorAccent</color>
+    <color name="drawer_items_colour">#253949</color>
+    <color name="drawer_item_selected">#179b81</color>
+    <color name="graph_background">#ffffff</color>
+    <color name="graph_index_text_colour">#253949</color>
+    <color name="graph_axis_colour">#253949</color>
+    <color name="graph_text_colour">#253949</color>
+
+    <color name="grey_3">#f7f7f7</color>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+    <color name="orange">#f17338</color>
+
+</resources>

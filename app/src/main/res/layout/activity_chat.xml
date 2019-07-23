@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_activity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar_chat"
+        layout="@layout/tool_bar_chat"
+        android:animateLayoutChanges="true" />
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar_chat"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/round_activity"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:elevation="8dp"
+            android:gravity="center_vertical"
+            android:minHeight="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageButton
+
+                android:id="@+id/search_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple"
+                android:padding="8dp"
+                android:src="@drawable/back" />
+
+            <EditText
+                android:id="@+id/search_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Enter Text"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingLeft="8dp" />
+
+            <ImageButton
+                android:id="@+id/search_remove_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple"
+                android:padding="8dp"
+                android:src="@drawable/close_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/divider_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_layout"
+            android:layout_gravity="center_horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_color" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/search_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom"
+        android:background="@color/chat_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_chat_reply"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <EditText
+                android:id="@+id/type_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Write a message"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chat_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="0"
+            android:background="@drawable/circle_chat"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/search_bottom"
+        android:layout_below="@id/tool_bar_chat"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <ListView
+            android:id="@+id/listview_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/chat_background"
+            android:divider="@null" />
+
+        <ImageButton
+            android:id="@+id/go_to_top"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/fab_margin"
+            android:background="@drawable/arrow_up" />
+    </FrameLayout>
+
+
+</RelativeLayout>

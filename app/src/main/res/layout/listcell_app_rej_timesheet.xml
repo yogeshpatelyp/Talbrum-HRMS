@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/submitted_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="01 SEPT 2017"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/rel_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitted_date"
+        android:layout_marginBottom="4dp">
+
+        <ImageView
+            android:id="@+id/calender"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/from_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/calender"
+            android:text="12 AUG 2017"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/from_date"
+            android:text="@string/dash"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/to_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dash"
+            android:text="12 SEPT 2017"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_layout"
+        android:layout_marginLeft="4dp">
+
+        <TextView
+            android:id="@+id/no_of_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No. Of Days : "
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/total_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/no_of_days"
+            android:text="5"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitted_date"
+        android:layout_toRightOf="@id/rel_layout">
+
+        <TextView
+            android:id="@+id/signed_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dp"
+            android:gravity="end"
+            android:text="SARANSH"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/signed_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/signed_by"
+            android:layout_marginBottom="4dp"
+            android:gravity="end"
+            android:text="25 DEC 2017"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/signed_on"
+            android:layout_marginBottom="8dp"
+            android:gravity="end"
+            android:text="STATUS"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

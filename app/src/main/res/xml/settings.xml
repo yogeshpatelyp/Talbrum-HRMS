@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/notifications">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="enable_notifications"
+            android:layout="@layout/custom_checkbox_preference_layout"
+            android:summary="@string/notification_title"
+            android:title="@string/enable_notifications" />
+
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/notificationDays"
+            android:entryValues="@array/notificationDaysValues"
+            android:key="notification_days"
+            android:layout="@layout/custom_text_preference_layout"
+            android:title="@string/days_notification" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/about_us">
+        <Preference
+            android:key="privacy_policy"
+            android:layout="@layout/custom_text_preference_layout"
+            android:title="@string/privacy_policy" />
+
+        <Preference
+            android:key="terms_conditions"
+            android:layout="@layout/custom_text_preference_layout"
+            android:title="@string/terms_conditions" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

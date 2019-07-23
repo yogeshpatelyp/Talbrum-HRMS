@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/drawer_header"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/company_image"
+        android:layout_width="91dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:scaleType="fitXY"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="@color/drawer_header"
+        app:civ_border_width="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/company_image"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="satish gupta"
+        android:textColor="@color/drawer_items_colour"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/profile_image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/company_image" />
+
+    <TextView
+        android:id="@+id/role"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:text="manager"
+        android:textColor="@color/drawer_items_colour"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toLeftOf="@+id/name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/comapany_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="-1dp"
+        android:text="merahunar"
+        android:textColor="@color/drawer_items_colour"
+        android:textSize="13sp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/role"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/role" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:text="emailsatish@merahunar.com"
+        android:textColor="@color/drawer_items_colour"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toLeftOf="@+id/comapany_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comapany_name" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/gradient_black_line"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image"
+        app:layout_goneMarginTop="10dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

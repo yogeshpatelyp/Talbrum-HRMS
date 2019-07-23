@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_reply"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/layout1"
+    android:layout_marginTop="8dp"
+
+
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/chatTextReply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="6"
+        android:background="@drawable/rounded_chat_reply"
+        android:padding="8dp"
+        android:text="@string/loren_ipsum"
+        android:textColor="#000" />
+
+</LinearLayout>
